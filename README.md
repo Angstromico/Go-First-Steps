@@ -1,5 +1,14 @@
 # My First Steps in Go
 
+```
+ ██████╗  ██████╗
+██╔════╝ ██╔═══██╗
+██║  ███╗██║   ██║
+██║   ██║██║   ██║
+╚██████╔╝╚██████╔╝
+ ╚═════╝  ╚═════╝
+```
+
 This repository contains my journey as I learn the Go programming language.
 
 ## Current Contents
