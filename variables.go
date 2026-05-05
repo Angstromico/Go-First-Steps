@@ -18,4 +18,10 @@ func main()	{
 		zipCode = 10001
 	)
 	fmt.Printf("Country: %s, Zip Code: %d\n", country, zipCode)
+
+	//Default values
+	var defaultString string
+	var defaultInt int
+	var defaultBool bool
+	fmt.Printf("Default String: '%s', Default Int: %d, Default Bool: %t\n", defaultString, defaultInt, defaultBool)
 }
