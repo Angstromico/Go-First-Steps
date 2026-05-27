@@ -13,9 +13,18 @@
 
 This repository contains my journey as I learn the Go programming language.
 
-## Current Contents
+## Project Structure
 
-- **Simple HTTP Server** (`main.go`) — A basic TCP HTTP server built from scratch using Go's `net` package. Handles incoming connections with goroutines, parses HTTP requests, and responds with simple HTML. A great introduction to networking and concurrency in Go!
+### [01 Basics](./01_basics)
+Fundamental concepts of the Go programming language.
+- **01 Hello**: The classic "Hello, World!" entry point.
+- **02 Variables**: Demonstrates variable declarations, types, short-hand assignments, and scope.
+- **03 Naming**: Covers Go naming conventions (camelCase vs. PascalCase) and basic struct usage.
+
+### [02 Networking](./02_networking)
+Exploring Go's powerful networking capabilities.
+- **01 TCP Server**: A low-level TCP server built with the `net` package that manually parses simple HTTP GET requests.
+- **02 HTTP Server**: A higher-level server using the standard `net/http` package that proxies requests to an external API.
 
 ## About This Repo
 
@@ -30,20 +39,20 @@ I'm using this space to practice and experiment with Go fundamentals. As I progr
 
 ## Running the Code
 
-To run the HTTP server:
+To run any example, navigate to its specific directory and use `go run`:
 
 ```bash
+cd 01_basics/01_hello
 go run main.go
 ```
 
-Then open your browser and visit: `http://localhost:8080`
-
-Or to build an executable:
+Alternatively, you can run it directly from the root of the repository:
 
 ```bash
-go build -o main.exe main.go
-./main.exe
+go run 01_basics/01_hello/main.go
 ```
+
+For the servers in the `02_networking` section, they will listen on `http://localhost:8080` by default.
 
 ---
 
