@@ -58,3 +58,6 @@ func calculateArea(radius float64) float64 {
 //Constants examples
 const maxRetries = 5
 const DefaultTimeout = 30
+
+//Package names should be lowercase and should not contain underscores or camelCase, keep them short and descriptive
+//For example, a package for handling user authentication could be named "auth" or "authentication"
