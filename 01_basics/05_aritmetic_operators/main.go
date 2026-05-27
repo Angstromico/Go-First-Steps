@@ -37,4 +37,10 @@ func main() {
 	println("Result with operator precedence:", result)
 	result = (a + b) * 2 // Parentheses change the order of evaluation
 	println("Result with parentheses:", result)
+
+	//	Bitwise operators
+	x := 5                               // In binary: 0101
+	y := 3                               // In binary: 0011
+	println("Bitwise AND (x & y):", x&y) // 1 (0001)
+	println("Bitwise OR (x | y):", x|y)  // 7 (0111)
 }
