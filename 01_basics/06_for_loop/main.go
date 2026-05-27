@@ -44,6 +44,6 @@ func main() {
 		for j := 0; j < 2*i+1; j++ {
 			print("*")
 		}
-		println()
+		println() //Moving to the next line after each row of stars
 	}
 }
