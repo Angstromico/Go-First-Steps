@@ -15,4 +15,14 @@ func main() {
 	println("Multiplication:", e)
 	println("Division:", f)
 	println("Modulus:", g)
+
+	//	Compound assignment operators
+	a += 2 // a = a + 2
+	println("After compound addition (a += 2):", a)
+	a -= 2 // a = a - 2
+	println("After compound subtraction (a -= 2):", a)
+	a *= 2 // a = a * 2
+	println("After compound multiplication (a *= 2):", a)
+	a /= 2 // a = a / 2
+	println("After compound division (a /= 2):", a)
 }
