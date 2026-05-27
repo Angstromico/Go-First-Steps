@@ -49,4 +49,8 @@ func main() {
 	var i1 int = 2
 	resultFloat := f1 + float64(i1)
 	println("Result of integer to float operation:", resultFloat) //This is a float64 result
+	const p float64 = 10 / 3
+	println("Result of integer division assigned to float constant:", p) //This will be 3, because the division is done as integer division before being assigned to the float constant
+	const q float64 = 10.0 / 3
+	println("Result of float division assigned to float constant:", q) //This will be approximately 3.3333333333333335, because the division is done as float division
 }
