@@ -24,6 +24,10 @@ func main() {
 	for i := 0; i < 5; i++ {
 		fmt.Printf("Loop iteration: %d\n", i)
 	}
+	//Range version
+	for i := range 5 {
+    fmt.Printf("Loop iteration: %d\n", i)
+	}
 	//Is also useful for temporary variables in functions
 	area := calculateArea(5.0)
 	fmt.Printf("Area of circle with radius 5: %.2f\n", area)
