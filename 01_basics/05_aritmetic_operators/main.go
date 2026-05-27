@@ -53,4 +53,18 @@ func main() {
 	println("Result of integer division assigned to float constant:", p) //This will be 3, because the division is done as integer division before being assigned to the float constant
 	const q float64 = 10.0 / 3
 	println("Result of float division assigned to float constant:", q) //This will be approximately 3.3333333333333335, because the division is done as float division
+
+	//Overflow and underflow
+	var maxInt int = 1<<63 - 1
+	println("Maximum int value:", maxInt)
+	var minInt int = -1 << 63
+	println("Minimum int value:", minInt)
+	var overflowInt int = maxInt + 1
+	println("Overflowed int value (maxInt + 1):", overflowInt)
+	var underflowInt int = minInt - 1
+	println("Underflowed int value (minInt - 1):", underflowInt)
+	var maxFloat float64 = 1.7976931348623157e+308
+	println("Maximum float value:", maxFloat)
+	var underflowFloat float64 = 5e-324
+	println("Minimum float value:", underflowFloat)
 }
