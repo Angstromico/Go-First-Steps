@@ -26,7 +26,7 @@ func main() {
 	}
 	//Range version
 	for i := range 5 {
-    fmt.Printf("Loop iteration: %d\n", i)
+		fmt.Printf("Loop iteration: %d\n", i)
 	}
 	//Is also useful for temporary variables in functions
 	area := calculateArea(5.0)
@@ -55,7 +55,7 @@ func calculateArea(radius float64) float64 {
 	return pi * radius * radius
 }
 
-//Constants examples
+// Constants examples
 const maxRetries = 5
 const DefaultTimeout = 30
 
