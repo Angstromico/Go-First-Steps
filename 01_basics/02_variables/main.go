@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 //middlename := "Bob" // This will cause an error because it's not inside a function
-var middlename string = "Anton"	// This is a package-level variable, but it's generally better to declare variables inside functions for better scope management
+var middlename string = "Anton" // This is a package-level variable, but it's generally better to declare variables inside functions for better scope management
 
-func main()	{
+func main() {
 	var middlename string = "Bob" // This is now inside a function
 	var name string = "Alice"
 	var age int = 30
@@ -31,7 +31,7 @@ func main()	{
 
 	// Scoped variables
 	if age > 18 {
-		var isAdult bool = true //isAdult is only available within this if block for scope	
+		var isAdult bool = true //isAdult is only available within this if block for scope
 		fmt.Printf("Is Adult: %t\n", isAdult)
 		calculatedArea := calculateArea(5.0)
 		fmt.Printf("Area of circle with radius 5: %.2f\n", calculatedArea)

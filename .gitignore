@@ -1,0 +1,28 @@
+# Binaries and Executables
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+main.exe
+
+# Go Test outputs
+*.test
+*.out
+*.prof
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+db.db
+.DS_Store

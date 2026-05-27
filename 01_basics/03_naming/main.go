@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()	{
+func main() {
 	//	Variable naming conventions
 	//	1. Use camelCase for variable names
 	//	2. Variable names should be descriptive and meaningful
@@ -30,20 +30,20 @@ func main()	{
 
 	//And structs, interfaces and enums are normally named using PascalCase as well
 	type User struct {
-    FirstName string
-    LastName  string
-    Age       int
-    Active    bool
-}
+		FirstName string
+		LastName  string
+		Age       int
+		Active    bool
+	}
 
-user := User{
-				FirstName: "Alice",
-				LastName:  "Smith",
-				Age:       30,
-				Active:    false,
-			}
+	user := User{
+		FirstName: "Alice",
+		LastName:  "Smith",
+		Age:       30,
+		Active:    false,
+	}
 
-	fmt.Printf("User: %+v\n", user) //When I try to compile this  give e this error: "go run variables.go stat variables.go: no such file or directory"
+	fmt.Printf("User: %+v\n", user)
 }
 
 func calculateArea(radius float64) float64 {

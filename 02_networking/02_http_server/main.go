@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 	"io"
-	request "net/http"
+	"net/http"
 )
 
-func	main()	{
-	request.HandleFunc("/", func(w request.ResponseWriter, r *request.Request) {
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Received request, fetching external data...")
-		resp, err := request.Get("requests://jsonplaceholder.typicode.com/posts/1")
+		resp, err := http.Get("https://jsonplaceholder.typicode.com/posts/1")
 
 		if err != nil {
-			request.Error(w, "Error when calling external API", request.StatusInternalServerError)
+			http.Error(w, "Error when calling external API", http.StatusInternalServerError)
 			return
 		}
 
@@ -27,5 +27,5 @@ func	main()	{
 			fmt.Println("Error in copying the response:", err)
 		}
 	})
-	request.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8080", nil)
 }
