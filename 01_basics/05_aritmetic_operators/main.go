@@ -31,4 +31,10 @@ func main() {
 	println("After increment (a++):", a)
 	a-- // a = a - 1
 	println("After decrement (a--):", a)
+
+	//	Operator precedence
+	result := a + b*2 // Multiplication has higher precedence than addition
+	println("Result with operator precedence:", result)
+	result = (a + b) * 2 // Parentheses change the order of evaluation
+	println("Result with parentheses:", result)
 }
