@@ -33,4 +33,17 @@ func main() {
 		}
 		println()
 	}
+
+	//Outer loop
+	for i := 0; i < 10; i++ {
+		//Inner loop for spaces before stars
+		for j := 0; j < 10-i-1; j++ {
+			print(" ")
+		}
+		//Inner loop for stars
+		for j := 0; j < 2*i+1; j++ {
+			print("*")
+		}
+		println()
+	}
 }
