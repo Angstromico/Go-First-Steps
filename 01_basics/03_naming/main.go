@@ -54,3 +54,7 @@ func calculateArea(radius float64) float64 {
 	const pi = 3.14159
 	return pi * radius * radius
 }
+
+//Constants examples
+const maxRetries = 5
+const DefaultTimeout = 30
