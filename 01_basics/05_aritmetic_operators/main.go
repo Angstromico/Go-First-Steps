@@ -67,4 +67,10 @@ func main() {
 	println("Maximum float value:", maxFloat)
 	var underflowFloat float64 = 5e-324
 	println("Minimum float value:", underflowFloat)
+	maxInt = maxInt + 1
+	println("Overflowed int value (maxInt + 1):", maxInt)
+	underflowInt = minInt - 1
+	println("Underflowed int value (minInt - 1):", underflowInt)
+	println("Max int + 1 =", int64(maxInt)+1)
+	println("Min int - 1 =", int64(minInt)-1)
 }
