@@ -55,6 +55,7 @@ func main() {
 		println("Counter:", counter)
 		counter++
 	}
+	//Use Break to exit loop
 	sum := 0
 	for {
 		sum += 10
@@ -63,5 +64,14 @@ func main() {
 		if sum >= 50 {
 			break
 		}
+	}
+	//Use Continue to skip an iteration in while loop
+	num := 0
+	for num < 10 {
+		num++
+		if num == 5 {
+			continue
+		}
+		println("Number:", num)
 	}
 }
