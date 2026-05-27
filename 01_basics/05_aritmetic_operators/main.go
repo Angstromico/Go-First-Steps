@@ -25,4 +25,10 @@ func main() {
 	println("After compound multiplication (a *= 2):", a)
 	a /= 2 // a = a / 2
 	println("After compound division (a /= 2):", a)
+
+	//	Increment and decrement operators
+	a++ // a = a + 1
+	println("After increment (a++):", a)
+	a-- // a = a - 1
+	println("After decrement (a--):", a)
 }
