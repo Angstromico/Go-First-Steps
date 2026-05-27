@@ -43,4 +43,10 @@ func main() {
 	y := 3                               // In binary: 0011
 	println("Bitwise AND (x & y):", x&y) // 1 (0001)
 	println("Bitwise OR (x | y):", x|y)  // 7 (0111)
+
+	// Interger on float	operations
+	var f1 float64 = 3.5
+	var i1 int = 2
+	resultFloat := f1 + float64(i1)
+	println("Result of integer to float operation:", resultFloat) //This is a float64 result
 }
