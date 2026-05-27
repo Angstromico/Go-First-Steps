@@ -13,6 +13,24 @@
 
 This repository contains my journey as I learn the Go programming language.
 
+## Folder Structure
+
+```text
+.
+├── 01_basics/
+│   ├── 01_hello/
+│   │   └── main.go
+│   ├── 02_variables/
+│   │   └── main.go
+│   └── 03_naming/
+│       └── main.go
+└── 02_networking/
+    ├── 01_tcp_server/
+    │   └── main.go
+    └── 02_http_server/
+        └── main.go
+```
+
 ## Project Structure
 
 ### [01 Basics](./01_basics)
