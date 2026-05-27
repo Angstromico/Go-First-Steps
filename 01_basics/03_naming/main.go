@@ -32,7 +32,7 @@ func main() {
 	area := calculateArea(5.0)
 	fmt.Printf("Area of circle with radius 5: %.2f\n", area)
 
-	//And structs, interfaces and enums are normally named using PascalCase as well
+	// Structs, interfaces, and enum-like types are usually named using PascalCase
 	type User struct {
 		FirstName string
 		LastName  string
