@@ -13,4 +13,14 @@ func main() {
 	for _, word := range words {
 		println("Word:", word)
 	}
+	// Odd or even numbers loop
+	const limit = 10
+
+	for i := range make([]int, limit) {
+		if i%2 == 0 {
+			println(i, "is even")
+		} else {
+			println(i, "is odd")
+		}
+	}
 }
