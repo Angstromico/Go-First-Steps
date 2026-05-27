@@ -49,4 +49,10 @@ func main() {
 	for value := range make([]int, 5) {
 		println("Value from range loop:", value)
 	}
+	//While loop	using for
+	counter := 0
+	for counter < 5 {
+		println("Counter:", counter)
+		counter++
+	}
 }
