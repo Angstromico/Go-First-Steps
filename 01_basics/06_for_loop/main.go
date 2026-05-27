@@ -23,4 +23,14 @@ func main() {
 			println(i, "is odd")
 		}
 	}
+
+	rows := 5
+
+	//	Nested loops to print a pattern
+	for i := 0; i < rows; i++ {
+		for j := 0; j <= i; j++ {
+			print("* ")
+		}
+		println()
+	}
 }
