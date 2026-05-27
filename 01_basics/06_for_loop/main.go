@@ -55,4 +55,13 @@ func main() {
 		println("Counter:", counter)
 		counter++
 	}
+	sum := 0
+	for {
+		sum += 10
+		print("Sum:", sum)
+		print("\n")
+		if sum >= 50 {
+			break
+		}
+	}
 }
