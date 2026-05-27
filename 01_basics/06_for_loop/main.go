@@ -46,4 +46,7 @@ func main() {
 		}
 		println() //Moving to the next line after each row of stars
 	}
+	for value := range make([]int, 5) {
+		println("Value from range loop:", value)
+	}
 }
