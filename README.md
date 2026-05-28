@@ -70,18 +70,25 @@ Alternatively, you can run it directly from the root of the repository:
 go run 01_basics/01_hello/main.go
 ```
 
-### Automation Utility (Windows/PowerShell)
+### Automation Utilities
 
-For even faster execution, you can use the provided `run.ps1` script from the root. It searches for a project by name and runs it automatically.
+For even faster execution, you can use the provided scripts from the root. They search for a project by name and run it automatically.
 
+#### Windows (PowerShell)
 ```powershell
 .\run.ps1 hello
 .\run.ps1 guessing_game
 ```
 
-If multiple projects match your search term, the script will list them so you can be more specific.
+#### Bash (Linux/macOS/Git Bash)
+```bash
+./run.sh hello
+./run.sh guessing_game
+```
 
-> **Tip:** You can add an alias to your PowerShell profile to make this even shorter (e.g., `gr guessing_game`).
+If multiple projects match your search term, the scripts will list them so you can be more specific.
+
+> **Tip:** You can add an alias to your profile to make this even shorter (e.g., `gr guessing_game`).
 
 For the servers in the `02_networking` section, they will listen on `http://localhost:8080` by default.
 
