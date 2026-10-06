@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	// Create a slice
@@ -35,4 +38,16 @@ func main() {
 	//Nil slice
 	var nilSlice []int
 	fmt.Println(nilSlice)
+
+	//Compare Slices
+	slice1 := []int{1, 2, 3}
+	slice2 := []int{1, 2, 3}
+	slice3 := []int{1, 2, 4}
+
+	if slices.Equal(slice1, slice2) {
+		fmt.Println("slice1 and slice2 are equal")
+	}
+	if slices.Equal(slice1, slice3) {
+		fmt.Println("slice1 and slice3 are equal")
+	}
 }
