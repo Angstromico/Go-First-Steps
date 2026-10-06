@@ -24,4 +24,9 @@ func main() {
 	//Init an empty map
 	emptyMap := make(map[string]int)
 	fmt.Println(emptyMap)
+
+	//Loop in map
+	for key, value := range mapExample {
+		fmt.Printf("Key: %s, Value: %d\n", key, value)
+	}
 }
