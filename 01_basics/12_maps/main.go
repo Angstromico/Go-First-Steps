@@ -29,4 +29,11 @@ func main() {
 	for key, value := range mapExample {
 		fmt.Printf("Key: %s, Value: %d\n", key, value)
 	}
+
+	//Check if a key exists
+	if value, exists := mapExample["one"]; exists {
+		fmt.Println("Key 'one' exists with value:", value)
+	} else {
+		fmt.Println("Key 'one' does not exist")
+	}
 }
