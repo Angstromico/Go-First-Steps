@@ -13,4 +13,14 @@ func main() {
 	default:
 		fmt.Println("a is less than b")
 	}
+
+	//Evaluating a case:
+	switch a {
+	case 10:
+		fmt.Println("a is 10")
+	case 3:
+		fmt.Println("a is 3")
+	default:
+		fmt.Println("a is something else")
+	}
 }
