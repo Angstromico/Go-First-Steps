@@ -43,6 +43,17 @@ func main() {
 	fmt.Println(arr == arr4) // false
 	arr5 := [3]int{1, 2, 4}
 	fmt.Println(arr == arr5) // false
+
+	//Multidimensional arrays
+	arr6 := [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	for i, row := range arr6 {
+		for j, val := range row {
+			fmt.Printf("arr6[%d][%d] = %d\n", i, j, val)
+		}
+	}
 }
 
 func someFunction() (int, int) {
