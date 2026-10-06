@@ -54,6 +54,13 @@ func main() {
 			fmt.Printf("arr6[%d][%d] = %d\n", i, j, val)
 		}
 	}
+
+	//Use pointers with arrays
+	arrPtr := &arr
+	fmt.Println(*arrPtr)
+
+	//Compare arrays
+	fmt.Println(arr == *arrPtr)
 }
 
 func someFunction() (int, int) {
