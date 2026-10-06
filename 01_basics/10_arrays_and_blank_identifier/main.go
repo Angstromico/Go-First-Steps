@@ -15,4 +15,10 @@ func main() {
 	for _, v := range arr2 {
 		fmt.Println(v)
 	}
+
+	//If you assing an array to another array, it will create a copy of the array and not a reference to the original array.
+	arr3 := arr
+	arr3[0] = 99
+	fmt.Println(arr)  // Original array remains unchanged
+	fmt.Println(arr3) // Modified copy of the array
 }
