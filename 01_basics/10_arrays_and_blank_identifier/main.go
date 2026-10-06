@@ -33,4 +33,12 @@ func main() {
 	for i, v := range arr {
 		fmt.Printf("Index: %d, Value: %d\n", i, v)
 	}
+
+	//Using the blank identifier to ignore values returned by a function
+	_, b := someFunction()
+	fmt.Println(b)
+}
+
+func someFunction() (int, int) {
+	return 1, 2
 }
