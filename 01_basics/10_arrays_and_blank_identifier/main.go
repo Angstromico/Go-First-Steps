@@ -21,4 +21,10 @@ func main() {
 	arr3[0] = 99
 	fmt.Println(arr)  // Original array remains unchanged
 	fmt.Println(arr3) // Modified copy of the array
+
+	//Loop in array with for loop:
+
+	for i := 0; i < len(arr); i++ {
+		fmt.Println(arr[i])
+	}
 }
