@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 func main() {
 	// Create a map
@@ -64,4 +67,10 @@ func main() {
 	} else {
 		fmt.Println("Key 'one' does not exist")
 	}
+
+	// maps.Equal compares two maps for equality
+	// Example:
+	map1 := map[string]int{"a": 1, "b": 2}
+	map2 := map[string]int{"a": 1, "b": 2}
+	fmt.Println(maps.Equal(map1, map2)) // Output: true
 }
