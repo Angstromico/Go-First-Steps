@@ -36,4 +36,7 @@ func main() {
 	} else {
 		fmt.Println("Key 'one' does not exist")
 	}
+
+	//What happen if you consult a key that does not exist
+	fmt.Println("Value of 'nonexistent':", mapExample["nonexistent"]) //Output: 0
 }
