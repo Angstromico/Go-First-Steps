@@ -34,4 +34,12 @@ func main() {
 	default:
 		fmt.Println("a is something else")
 	}
+
+	day := "Monday"
+	switch day {
+	case "Monday", "Tuesday":
+		fmt.Println("It's a weekday")
+	default:
+		fmt.Println("It's a weekend")
+	}
 }
