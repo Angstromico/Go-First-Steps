@@ -37,6 +37,12 @@ func main() {
 	//Using the blank identifier to ignore values returned by a function
 	_, b := someFunction()
 	fmt.Println(b)
+
+	//Arrays with same content are not equal
+	arr4 := [3]int{1, 2, 3}
+	fmt.Println(arr == arr4) // false
+	arr5 := [3]int{1, 2, 4}
+	fmt.Println(arr == arr5) // false
 }
 
 func someFunction() (int, int) {
