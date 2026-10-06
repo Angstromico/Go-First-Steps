@@ -60,4 +60,7 @@ func main() {
 	//Capacity of a slice
 	fmt.Println("Capacity of slice4:", cap(slice4))
 	fmt.Println("Length of slice4:", len(slice4))
+
+	fmt.Println(len(subSlice)) // 2
+	fmt.Println(cap(subSlice)) // 4
 }
