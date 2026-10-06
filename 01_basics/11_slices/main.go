@@ -50,4 +50,10 @@ func main() {
 	if slices.Equal(slice1, slice3) {
 		fmt.Println("slice1 and slice3 are equal")
 	}
+
+	//slice[low:hight]
+	slice4 := []int{1, 2, 3, 4, 5}
+	subSlice := slice4[1:3] // [2, 3]
+	fmt.Println(slice4)
+	fmt.Println(subSlice)
 }
