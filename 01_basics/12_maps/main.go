@@ -56,4 +56,12 @@ func main() {
 	//Clear the map
 	clear(mapExample)
 	fmt.Println(mapExample)
+
+	//Check if an value is asociate to some key
+	_, exists := mapExample["one"]
+	if exists {
+		fmt.Println("Key 'one' exists")
+	} else {
+		fmt.Println("Key 'one' does not exist")
+	}
 }
