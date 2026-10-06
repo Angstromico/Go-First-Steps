@@ -21,4 +21,14 @@ func main() {
 			fmt.Printf("sliceOfSlices[%d][%d] = %d\n", i, j, val)
 		}
 	}
+
+	//Assing an array to a slice
+	arr := [3]int{7, 8, 9}
+	sliceFromArr := arr[:]
+	limitArrayFromSlice := sliceFromArr[:2] //[7,8,9]
+	evenMoreLimitArrayFromSlice := sliceFromArr[:1]
+
+	fmt.Println(sliceFromArr)
+	fmt.Println(limitArrayFromSlice)
+	fmt.Println(evenMoreLimitArrayFromSlice)
 }
