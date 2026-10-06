@@ -20,4 +20,8 @@ func main() {
 	// Delete a key-value pair
 	delete(mapExample, "two")
 	fmt.Println(mapExample)
+
+	//Init an empty map
+	emptyMap := make(map[string]int)
+	fmt.Println(emptyMap)
 }
