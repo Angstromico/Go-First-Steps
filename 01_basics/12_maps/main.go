@@ -39,4 +39,17 @@ func main() {
 
 	//What happen if you consult a key that does not exist
 	fmt.Println("Value of 'nonexistent':", mapExample["nonexistent"]) //Output: 0
+
+	//Get the key and the value in a separate way
+	keys := make([]string, 0, len(mapExample))
+	for key := range mapExample {
+		keys = append(keys, key)
+	}
+	fmt.Println("Keys:", keys)
+
+	values := make([]int, 0, len(mapExample))
+	for _, value := range mapExample {
+		values = append(values, value)
+	}
+	fmt.Println("Values:", values)
 }
