@@ -31,4 +31,8 @@ func main() {
 	fmt.Println(sliceFromArr)
 	fmt.Println(limitArrayFromSlice)
 	fmt.Println(evenMoreLimitArrayFromSlice)
+
+	//Nil slice
+	var nilSlice []int
+	fmt.Println(nilSlice)
 }
