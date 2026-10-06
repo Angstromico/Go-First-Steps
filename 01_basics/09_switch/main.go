@@ -42,4 +42,19 @@ func main() {
 	default:
 		fmt.Println("It's a weekend")
 	}
+
+	checkType(42)
+	checkType("hello")
+	checkType(3.14)
+}
+
+func checkType(v interface{}) {
+	switch v.(type) {
+	case int:
+		fmt.Println("v is an int")
+	case string:
+		fmt.Println("v is a string")
+	default:
+		fmt.Println("v is of some other type")
+	}
 }
