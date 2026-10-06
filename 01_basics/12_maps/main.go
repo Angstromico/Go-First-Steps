@@ -52,4 +52,8 @@ func main() {
 		values = append(values, value)
 	}
 	fmt.Println("Values:", values)
+
+	//Clear the map
+	clear(mapExample)
+	fmt.Println(mapExample)
 }
