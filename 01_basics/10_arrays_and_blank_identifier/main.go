@@ -27,4 +27,10 @@ func main() {
 	for i := 0; i < len(arr); i++ {
 		fmt.Println(arr[i])
 	}
+
+	//For loop range and value in same message:
+
+	for i, v := range arr {
+		fmt.Printf("Index: %d, Value: %d\n", i, v)
+	}
 }
