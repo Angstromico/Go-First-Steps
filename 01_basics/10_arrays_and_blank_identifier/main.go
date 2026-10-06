@@ -9,4 +9,10 @@ func main() {
 	for _, v := range arr {
 		fmt.Println(v)
 	}
+
+	// Make an array of an undeterminate number of values
+	arr2 := [...]int{4, 5, 6}
+	for _, v := range arr2 {
+		fmt.Println(v)
+	}
 }
