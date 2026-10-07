@@ -10,6 +10,12 @@ func main() {
 	func() {
 		fmt.Println("This is an anonymous function")
 	}()
+
+	//Assignment function example
+	assignFunc := func(x, y int) int {
+		return x + y
+	}
+	fmt.Println("Result of assignFunc:", assignFunc(3, 4))
 }
 
 func greet(name string) {
