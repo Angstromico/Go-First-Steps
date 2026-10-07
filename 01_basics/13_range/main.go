@@ -17,4 +17,10 @@ func main() {
 	for key, value := range mapExample {
 		fmt.Printf("Key: %s, Value: %d\n", key, value)
 	}
+
+	//Range of an string
+	str := "hello"
+	for index, value := range str {
+		fmt.Printf("Index: %d, Value: %c\n", index, value)
+	}
 }
