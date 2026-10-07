@@ -25,6 +25,13 @@ func main() {
 	// Using the applyOperation function
 	result := applyOperation(assignFunc, 5, 6)
 	fmt.Println("Result of applyOperation:", result)
+
+	// Using the getOperation function
+	addFunc := getOperation("add")
+	multiplyFunc := getOperation("multiply")
+
+	fmt.Println("Result of addFunc:", addFunc(5, 6))
+	fmt.Println("Result of multiplyFunc:", multiplyFunc(5, 6))
 }
 
 func greet(name string) {
@@ -33,4 +40,20 @@ func greet(name string) {
 
 func applyOperation(f func(int, int) int, x, y int) int {
 	return f(x, y)
+}
+
+// Function that returns a function
+func getOperation(operation string) func(int, int) int {
+	switch operation {
+	case "add":
+		return func(x, y int) int {
+			return x + y
+		}
+	case "multiply":
+		return func(x, y int) int {
+			return x * y
+		}
+	default:
+		return nil
+	}
 }
