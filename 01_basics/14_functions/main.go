@@ -16,6 +16,11 @@ func main() {
 		return x + y
 	}
 	fmt.Println("Result of assignFunc:", assignFunc(3, 4))
+
+	//Can also assign a no anonymous func to a variable:
+	salutations := greet
+
+	salutations("Alice")
 }
 
 func greet(name string) {
