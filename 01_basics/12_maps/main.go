@@ -78,4 +78,9 @@ func main() {
 	// Example:
 	var nilMap map[string]int
 	fmt.Println(nilMap == nil) // This will cause a panic
+	//In order to app a new key to a nil map, you need to initialize it first.
+	// Example:
+	nilMap = make(map[string]int)
+	nilMap["key"] = 1
+	fmt.Println(nilMap)
 }
