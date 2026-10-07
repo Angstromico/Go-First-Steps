@@ -83,4 +83,13 @@ func main() {
 	nilMap = make(map[string]int)
 	nilMap["key"] = 1
 	fmt.Println(nilMap)
+
+	//Nested maps
+	// Example:
+	nestedMap := map[string]map[string]int{
+		"outer": {
+			"inner": 1,
+		},
+	}
+	fmt.Println(nestedMap)
 }
