@@ -73,4 +73,9 @@ func main() {
 	map1 := map[string]int{"a": 1, "b": 2}
 	map2 := map[string]int{"a": 1, "b": 2}
 	fmt.Println(maps.Equal(map1, map2)) // Output: true
+
+	//Any uninitialized map will have a nil value, and accessing it will panic.
+	// Example:
+	var nilMap map[string]int
+	fmt.Println(nilMap == nil) // This will cause a panic
 }
