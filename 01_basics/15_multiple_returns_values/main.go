@@ -21,9 +21,13 @@ func getPersonInfo() (string, int) {
 }
 
 // A function that returns multiple variables can come in handy for debugging errors:
-func compare(a, b int) (string, error) {
+func compare(a, b int) (message string, errorPrompt error) {
 	if a == b {
-		return "Values are equal", nil
+		message = "Values are equal"
+		errorPrompt = nil
+		return
 	}
-	return "Values are not equal", fmt.Errorf("values do not match")
+	message = "Values are not equal"
+	errorPrompt = fmt.Errorf("values do not match")
+	return
 }
