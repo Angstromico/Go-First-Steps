@@ -23,6 +23,9 @@ func main() {
 func processPanic(input int) {
 	// Function to process panic
 	if input < 0 {
+		//Deferred functions are executed in LIFO order, meaning the last deferred function is executed first. In this case, the deferred function will be executed before the panic is propagated up the call stack.
+		defer fmt.Println("Deferred function executed before panic.")
+
 		panic("Negative value received!")
 	}
 	fmt.Printf("Processing input: %d\n", input)
