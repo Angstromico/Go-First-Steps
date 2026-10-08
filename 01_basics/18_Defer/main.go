@@ -7,13 +7,15 @@ func main() {
 	defer fmt.Println("This will be printed last.")
 	fmt.Println("This will be printed first.")
 
-	multipleDefers()
+	multipleDefers(10)
 }
 
 // Function with multiple	defer statements
-func multipleDefers() {
+func multipleDefers(i int) {
+	defer fmt.Println("The value is not modified after deferred statement: ", i)
 	defer fmt.Println("First defer statement.")
 	defer fmt.Println("Second defer statement.")
 	defer fmt.Println("Third defer statement.")
+	i++
 	fmt.Println("This will be printed in the middle.")
 }
