@@ -18,4 +18,6 @@ func main() {
 
 	var p1 *int
 	fmt.Println("Pointer of nil value:", p1) // Output: Pointer of nil value: <nil>
+
+	//There is no pointer arithmetic in Go. You cannot perform operations like incrementing or decrementing a pointer value. However, you can use the "unsafe" package to perform pointer arithmetic, but it is not recommended as it can lead to undefined behavior.
 }
