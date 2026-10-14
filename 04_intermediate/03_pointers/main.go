@@ -14,4 +14,8 @@ func main() {
 	fmt.Println("Value of p:", *p) // Output: Value of p: 10
 	fmt.Println("Direction on memory of the variable:", p)
 	fmt.Println("Direction on memory of the variable:", &x)
+	//Pointer of nil value:
+
+	var p1 *int
+	fmt.Println("Pointer of nil value:", p1) // Output: Pointer of nil value: <nil>
 }
