@@ -18,6 +18,9 @@ func main() {
 
 	sequence := adder()
 	fmt.Println(sequence()) // Output: 1
+	fmt.Println(sequence()) // Output: 2
+	fmt.Println(sequence()) // Output: 3
+	fmt.Println(sequence()) // Output: 4
 }
 
 func adder() func() int {
