@@ -13,4 +13,5 @@ func main() {
 	fmt.Println("Value of x:", x)  // Output: Value of x: 10
 	fmt.Println("Value of p:", *p) // Output: Value of p: 10
 	fmt.Println("Direction on memory of the variable:", p)
+	fmt.Println("Direction on memory of the variable:", &x)
 }
