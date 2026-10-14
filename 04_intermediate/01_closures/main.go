@@ -15,4 +15,17 @@ func main() {
 	}
 	add5 := outer(5)
 	fmt.Println(add5(10)) // Output: 15
+
+	sequence := adder()
+	fmt.Println(sequence()) // Output: 1
+}
+
+func adder() func() int {
+	i := 0
+	fmt.Println("i is", i)
+	return func() int {
+		i++
+		println("i is", i)
+		return i
+	}
 }
