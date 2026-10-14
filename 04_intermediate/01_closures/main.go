@@ -34,6 +34,17 @@ func main() {
 	subtract5 := subtraction(5)
 	fmt.Println(subtract5(10)) // Output: -5
 	fmt.Println(subtract5(3))  // Output: 2
+
+	countdown := func(x int) func() int {
+		return func() int {
+			x--
+			return x
+		}
+	}
+
+	counter := countdown(5)
+	fmt.Println(counter()) // Output: 4
+	fmt.Println(counter()) // Output: 3
 }
 
 func adder() func() int {
