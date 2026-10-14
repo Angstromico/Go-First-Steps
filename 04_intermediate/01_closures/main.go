@@ -24,6 +24,16 @@ func main() {
 
 	sequence2 := adder()
 	fmt.Println(sequence2()) // Output: 1
+
+	subtraction := func(x int) func(y int) int {
+		return func(y int) int {
+			return x - y
+		}
+
+	}
+	subtract5 := subtraction(5)
+	fmt.Println(subtract5(10)) // Output: -5
+	fmt.Println(subtract5(3))  // Output: 2
 }
 
 func adder() func() int {
