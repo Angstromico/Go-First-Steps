@@ -21,4 +21,11 @@ func main() {
 	It can span multiple lines and include special characters like \n and \t without the need for escape sequences.`
 	fmt.Println("Raw string literal:")
 	fmt.Println(rawString)
+
+	//Normal string literals are enclosed in double quotes and can include escape sequences to represent special characters.
+	//In this example, we define a normal string literal called "normalString" using double quotes.
+	//We then print the normal string literal to the console.
+	normalString := "This is a normal string literal.\nIt can include escape sequences like \\n and \\t."
+	fmt.Println("Normal string literal:")
+	fmt.Println(normalString)
 }
