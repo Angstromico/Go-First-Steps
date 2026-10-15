@@ -42,4 +42,17 @@ func main() {
 	str2 := "World!"
 	concatenatedString := str1 + str2
 	fmt.Println("Concatenated string:", concatenatedString) // Output: Concatenated string: Hello, World!
+
+	//Compare two strings using the "==" operator. In this example, we define two string variables called "str3" and "str4" and assign them the values "Hello" and "Hello" respectively. We then compare the two strings using the "==" operator and print the result to the console.
+	str3 := "Hello"
+	str4 := "Hello"
+	fmt.Println("Are str3 and str4 equal?", str3 == str4) // Output: Are str3 and str4 equal? true
+	//Compare two strings using the "!=" operator. In this example, we define two string variables called "str5" and "str6" and assign them the values "Hello" and "World" respectively. We then compare the two strings using the "!=" operator and print the result to the console.
+	str5 := "Hello"
+	str6 := "World"
+	fmt.Println("Are str5 and str6 not equal?", str5 != str6) // Output: Are str5 and str6 not equal? true
+	//Compare two strings using the ">" operator. In this example, we define two string variables called "str7" and "str8" and assign them the values "Hello" and "World" respectively. We then compare the two strings using the ">" operator and print the result to the console.
+	str7 := "Hello"
+	str8 := "World"
+	fmt.Println("Is str7 greater than str8?", str7 > str8)
 }
