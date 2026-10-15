@@ -59,4 +59,11 @@ func main() {
 	str9 := "hello"
 	str10 := "Hello"
 	fmt.Println("Is str9 greater than str10?", str9 > str10) // Output: Is str9 greater than str10? true
+
+	//Loop through a string using a for loop. In this example, we define a string variable called "str11" and assign it the value "Hello, World!". We then use a for loop to iterate over each character in the string and print it to the console.
+	str11 := "Hello, World!"
+	fmt.Println("Looping through string:")
+	for i, char := range str11 {
+		fmt.Printf("Index: %d, Character: %c\n", i, char)
+	}
 }
