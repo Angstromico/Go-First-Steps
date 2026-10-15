@@ -29,6 +29,8 @@ func main() {
 	fmt.Printf("Type: %T\n", i)              // Output: Type: float64
 	fmt.Printf("String: %s\n", string)       // Output: String: My name is John and I am 30 years old.
 	fmt.Printf("String: %q\n", string)       // Output: String: "My name is John and I am 30 years old."
+	fmt.Printf("String: %v\n", string)       // Output: String: "My name is John and I am 30 years old."
+	fmt.Printf("String: %#v\n", string)      // Output: String: "My name is John and I am 30 years old."
 	fmt.Printf("Literal percent sign: %%\n") // Output: Literal percent sign: %
 
 	// ========================================
