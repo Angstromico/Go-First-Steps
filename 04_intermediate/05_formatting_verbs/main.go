@@ -10,4 +10,89 @@ func main() {
 	name := "John"
 	age := 30
 	fmt.Printf("My name is %s and I am %d years old.\n", name, age) // Output: My name is John and I am 30 years old.
+
+	// ========================================
+	// GENERAL FORMATTING VERBS
+	// ========================================
+	// %v  : value in default format
+	// %+v : structs with field names
+	// %#v : Go-syntax representation
+	// %T  : type of the value
+	// %%  : literal percent sign
+
+	// ========================================
+	// BOOLEANS
+	// ========================================
+	// %t  : true or false
+
+	// ========================================
+	// INTEGERS
+	// ========================================
+	// %b  : binary (base 2)
+	// %c  : Unicode character represented by the value
+	// %d  : decimal (base 10)
+	// %o  : octal (base 8)
+	// %O  : octal with 0o prefix
+	// %q  : single-quoted character literal
+	// %x  : hexadecimal (lowercase)
+	// %X  : hexadecimal (uppercase)
+	// %U  : Unicode format (U+1234)
+
+	// ========================================
+	// FLOATING-POINT & COMPLEX NUMBERS
+	// ========================================
+	// %b  : scientific notation, power of 2 exponent
+	// %e  : scientific notation (e.g. 1.23e+10)
+	// %E  : scientific notation (e.g. 1.23E+10)
+	// %f  : decimal notation
+	// %F  : same as %f
+	// %g  : shortest between %e and %f
+	// %G  : shortest between %E and %F
+
+	// ========================================
+	// STRINGS & BYTE SLICES
+	// ========================================
+	// %s  : raw string
+	// %q  : double-quoted Go string
+	// %x  : hexadecimal bytes (lowercase)
+	// %X  : hexadecimal bytes (uppercase)
+
+	// ========================================
+	// POINTERS
+	// ========================================
+	// %p  : memory address in hexadecimal
+
+	// ========================================
+	// WIDTH & PRECISION MODIFIERS
+	// ========================================
+	// %8d     : width 8, right-aligned
+	// %-8d    : width 8, left-aligned
+	// %08d    : width 8, zero-padded
+	// %.2f    : 2 decimal places
+	// %8.2f   : width 8, precision 2
+	// %*d     : width specified by argument
+	// %.*f    : precision specified by argument
+
+	// ========================================
+	// EXAMPLES
+	// ========================================
+	// fmt.Printf("%v\n", value)
+	// fmt.Printf("%+v\n", myStruct)
+	// fmt.Printf("%#v\n", value)
+	// fmt.Printf("%T\n", value)
+	//
+	// fmt.Printf("%t\n", true)
+	//
+	// fmt.Printf("%d\n", 255)
+	// fmt.Printf("%b\n", 255)
+	// fmt.Printf("%o\n", 255)
+	// fmt.Printf("%x\n", 255)
+	//
+	// fmt.Printf("%f\n", 3.14159)
+	// fmt.Printf("%.2f\n", 3.14159)
+	//
+	// fmt.Printf("%s\n", "hello")
+	// fmt.Printf("%q\n", "hello")
+	//
+	// fmt.Printf("%p\n", &value)
 }
