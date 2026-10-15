@@ -55,4 +55,8 @@ func main() {
 	str7 := "Hello"
 	str8 := "World"
 	fmt.Println("Is str7 greater than str8?", str7 > str8)
+	//A simple lowercase can made a string greater than another string. In this example, we define two string variables called "str9" and "str10" and assign them the values "hello" and "Hello" respectively. We then compare the two strings using the ">" operator and print the result to the console.
+	str9 := "hello"
+	str10 := "Hello"
+	fmt.Println("Is str9 greater than str10?", str9 > str10) // Output: Is str9 greater than str10? true
 }
