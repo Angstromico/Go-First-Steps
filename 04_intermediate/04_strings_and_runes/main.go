@@ -13,4 +13,12 @@ func main() {
 	//We then use the "fmt.Printf" function to print the Unicode code point of the rune to the console.
 	r := 'A'
 	fmt.Printf("Unicode code point of rune: %U\n", r) // Output: Unicode code point of rune: U+0041
+
+	//In strings you can use backticks to create raw string literals that can span multiple lines and include special characters without the need for escape sequences.
+	//In this example, we define a raw string literal called "rawString" using backticks.
+	//We then print the raw string literal to the console.
+	rawString := `This is a raw string literal.
+	It can span multiple lines and include special characters like \n and \t without the need for escape sequences.`
+	fmt.Println("Raw string literal:")
+	fmt.Println(rawString)
 }
