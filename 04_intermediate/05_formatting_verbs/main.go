@@ -20,6 +20,15 @@ func main() {
 	// %T  : type of the value
 	// %%  : literal percent sign
 
+	//Example of general formatting:
+	i := 15.5
+	string := "My	name is John and I am 30 years old."
+
+	fmt.Printf("Value: %v\n", i)             // Output: Value: 15.5
+	fmt.Printf("Type: %T\n", i)              // Output: Type: float64
+	fmt.Printf("String: %s\n", string)       // Output: String: My name is John and I am 30 years old.
+	fmt.Printf("Literal percent sign: %%\n") // Output: Literal percent sign: %
+
 	// ========================================
 	// BOOLEANS
 	// ========================================
