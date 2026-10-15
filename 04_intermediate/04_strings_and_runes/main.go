@@ -80,4 +80,10 @@ func main() {
 	//String manipulation	using the "strings" package. In this example, we define a string variable called "str14" and assign it the value "Hello, World!". We then use the "strings.ToUpper" function to convert the string to uppercase and print the result to the console.
 	str14 := "Hello, World!"
 	fmt.Println("Uppercase of str14:", strings.ToUpper(str14)) // Output: Uppercase of str14: HELLO, WORLD!
+	//Other string manipulation functions from the "strings" package include "strings.ToLower", "strings.TrimSpace", "strings.Replace", and "strings.Split". In this example, we demonstrate the use of these functions on the string variable "str15" which is assigned the value "   Hello, World!   ".
+	str15 := "   Hello, World!   "
+	fmt.Println("Lowercase of str15:", strings.ToLower(str15))
+	fmt.Println("Trimmed of str15:", strings.TrimSpace(str15))
+	fmt.Println("Replaced of str15:", strings.Replace(str15, "World", "Go", -1))
+	fmt.Println("Split of str15:", strings.Split(str15, ",")) // Output: Split of str15: [   Hello  World!   ]
 }
