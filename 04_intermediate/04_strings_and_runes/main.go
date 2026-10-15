@@ -34,4 +34,12 @@ func main() {
 	//We then access the character at index 7 of the string using the indexing operator and print it to the console.
 	str := "Hello, World!"
 	fmt.Println("Character at index 7:", string(str[7])) // Output: Character at index 7: W
+
+	//String concatenation is the process of combining two or more strings into a single string.
+	//In this example, we define two string variables called "str1" and "str2" and assign them the values "Hello, " and "World!" respectively.
+	//We then concatenate the two strings using the "+" operator and print the result to the console.
+	str1 := "Hello, "
+	str2 := "World!"
+	concatenatedString := str1 + str2
+	fmt.Println("Concatenated string:", concatenatedString) // Output: Concatenated string: Hello, World!
 }
