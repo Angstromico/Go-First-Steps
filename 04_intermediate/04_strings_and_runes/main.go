@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	//In this example, we define a string variable called "s" and assign it the value "Hello, World!".
@@ -73,4 +76,8 @@ func main() {
 	str13 := "Hello, 世界!"
 	runeCount := len([]rune(str13))
 	fmt.Println("Rune count of str13:", runeCount) // Output: Rune count of str13: 9
+
+	//String manipulation	using the "strings" package. In this example, we define a string variable called "str14" and assign it the value "Hello, World!". We then use the "strings.ToUpper" function to convert the string to uppercase and print the result to the console.
+	str14 := "Hello, World!"
+	fmt.Println("Uppercase of str14:", strings.ToUpper(str14)) // Output: Uppercase of str14: HELLO, WORLD!
 }
