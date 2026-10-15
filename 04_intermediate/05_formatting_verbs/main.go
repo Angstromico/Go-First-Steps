@@ -21,7 +21,7 @@ func main() {
 	// %%  : literal percent sign
 
 	//Example of general formatting:
-	i := 15.5
+	i := 1_5.5 //You can use underscores in numeric literals to improve readability. In this case, 1_5.5 is equivalent to 15.5. But not in the decimal part. For example, 1.5_5 is not valid.
 	string := "My	name is John and I am 30 years old."
 
 	fmt.Printf("Value: %v\n", i)             // Output: Value: 15.5
