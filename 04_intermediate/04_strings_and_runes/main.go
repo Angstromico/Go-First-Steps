@@ -68,4 +68,9 @@ func main() {
 		//Get the character in hexadecimal format using the "%x" format specifier. In this example, we define a string variable called "str12" and assign it the value "Hello, World!". We then use a for loop to iterate over each character in the string and print its hexadecimal representation to the console.
 		fmt.Printf("Character: %c, Hexadecimal: %x\n", char, char)
 	}
+
+	//Get the Rune count of a string using the "utf8.RuneCountInString" function from the "unicode/utf8" package. In this example, we define a string variable called "str13" and assign it the value "Hello, 世界!". We then use the "utf8.RuneCountInString" function to get the rune count of the string and print it to the console.
+	str13 := "Hello, 世界!"
+	runeCount := len([]rune(str13))
+	fmt.Println("Rune count of str13:", runeCount) // Output: Rune count of str13: 9
 }
