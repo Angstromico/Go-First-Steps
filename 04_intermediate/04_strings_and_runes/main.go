@@ -65,5 +65,7 @@ func main() {
 	fmt.Println("Looping through string:")
 	for i, char := range str11 {
 		fmt.Printf("Index: %d, Character: %c\n", i, char)
+		//Get the character in hexadecimal format using the "%x" format specifier. In this example, we define a string variable called "str12" and assign it the value "Hello, World!". We then use a for loop to iterate over each character in the string and print its hexadecimal representation to the console.
+		fmt.Printf("Character: %c, Hexadecimal: %x\n", char, char)
 	}
 }
