@@ -28,4 +28,10 @@ func main() {
 	normalString := "This is a normal string literal.\nIt can include escape sequences like \\n and \\t."
 	fmt.Println("Normal string literal:")
 	fmt.Println(normalString)
+
+	//Accesing a character in a string by its index:
+	//In this example, we define a string variable called "str" and assign it the value "Hello, World!".
+	//We then access the character at index 7 of the string using the indexing operator and print it to the console.
+	str := "Hello, World!"
+	fmt.Println("Character at index 7:", string(str[7])) // Output: Character at index 7: W
 }
