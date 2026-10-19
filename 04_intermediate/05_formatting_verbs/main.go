@@ -51,6 +51,13 @@ func main() {
 	// %X  : hexadecimal (uppercase)
 	// %U  : Unicode format (U+1234)
 
+	//Example of integer formatting:
+	num := 255
+	fmt.Printf("Decimal: %d\n", num)
+	fmt.Printf("Binary: %b\n", num)
+	fmt.Printf("Octal: %o\n", num)
+	fmt.Printf("Hexadecimal: %x\n", num)
+
 	// ========================================
 	// FLOATING-POINT & COMPLEX NUMBERS
 	// ========================================
