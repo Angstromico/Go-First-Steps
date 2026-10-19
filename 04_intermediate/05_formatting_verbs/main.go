@@ -54,7 +54,8 @@ func main() {
 	//Example of integer formatting:
 	num := 255
 	fmt.Printf("Decimal: %d\n", num)
-	fmt.Printf("Decimal: %+d\n", num) // The %+d show the symbol	+ for positive numbers and - for negative numbers.
+	fmt.Printf("Decimal four spaces: %4d\n", num) // The 4 in %4d specifies a minimum width of 4 characters for the output. If the number has fewer than 4 digits, it will be padded with spaces on the left to make it 4 characters wide.
+	fmt.Printf("Decimal: %+d\n", num)             // The %+d show the symbol	+ for positive numbers and - for negative numbers.
 	fmt.Printf("Binary: %b\n", num)
 	fmt.Printf("Octal: %o\n", num)
 	fmt.Printf("Hexadecimal: %x\n", num)
