@@ -89,6 +89,8 @@ func main() {
 	str := "Hello, World!"
 	fmt.Printf("Raw string: %s\n", str)
 	fmt.Printf("Double-quoted string: %q\n", str)
+	fmt.Printf("Plain string width 8 justified right: %8s\n", str)
+	fmt.Printf("Plain string width 8 justified left: %-8s\n", str)
 	fmt.Printf("Hexadecimal bytes: %x\n", str)
 	fmt.Printf("Hexadecimal bytes (uppercase): %X\n", str)
 
