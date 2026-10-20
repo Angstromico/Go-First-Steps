@@ -60,8 +60,11 @@ func main() {
 	fmt.Printf("Octal: %o\n", num)
 	fmt.Printf("Octal: %O\n", num) //Octal with 0o prefix
 	fmt.Printf("Hexadecimal: %x\n", num)
-	fmt.Printf("Hexadecimal: %X\n", num) //Hexadecimal (uppercase)
-	fmt.Printf("Unicode: %U\n", num)     //Unicode formatfmt.Printf("Unicode: %U\n", num) //Unicode format
+	fmt.Printf("Hexadecimal: %X\n", num)                      //Hexadecimal (uppercase)
+	fmt.Printf("Unicode: %U\n", num)                          //Unicode formatfmt.Printf("Unicode: %U\n", num) //Unicode format
+	fmt.Printf("SShow width spaces: %4d\n", num)              //
+	fmt.Printf("SShow width spaces less spaces: %-4d\n", num) //
+	fmt.Printf("SShow width spaces and zero: %04d\n", num)    //
 
 	// ========================================
 	// FLOATING-POINT & COMPLEX NUMBERS
