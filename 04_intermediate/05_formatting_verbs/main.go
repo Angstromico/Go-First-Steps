@@ -58,6 +58,7 @@ func main() {
 	fmt.Printf("Decimal: %+d\n", num)             // The %+d show the symbol	+ for positive numbers and - for negative numbers.
 	fmt.Printf("Binary: %b\n", num)
 	fmt.Printf("Octal: %o\n", num)
+	fmt.Printf("Octal: %O\n", num) //Octal with 0o prefix
 	fmt.Printf("Hexadecimal: %x\n", num)
 
 	// ========================================
