@@ -38,6 +38,12 @@ func main() {
 	// ========================================
 	// %t  : true or false
 
+	//Examples of boolean formatting:
+	isTrue := true
+	isFalse := false
+	fmt.Printf("Boolean true: %t\n", isTrue)
+	fmt.Printf("Boolean false: %t\n", isFalse)
+
 	// ========================================
 	// INTEGERS
 	// ========================================
