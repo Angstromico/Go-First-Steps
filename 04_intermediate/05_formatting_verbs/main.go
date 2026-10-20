@@ -85,6 +85,13 @@ func main() {
 	// %x  : hexadecimal bytes (lowercase)
 	// %X  : hexadecimal bytes (uppercase)
 
+	//Strings examples:
+	str := "Hello, World!"
+	fmt.Printf("Raw string: %s\n", str)
+	fmt.Printf("Double-quoted string: %q\n", str)
+	fmt.Printf("Hexadecimal bytes: %x\n", str)
+	fmt.Printf("Hexadecimal bytes (uppercase): %X\n", str)
+
 	// ========================================
 	// POINTERS
 	// ========================================
