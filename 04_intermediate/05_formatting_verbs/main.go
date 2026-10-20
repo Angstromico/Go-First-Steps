@@ -60,6 +60,7 @@ func main() {
 	fmt.Printf("Octal: %o\n", num)
 	fmt.Printf("Octal: %O\n", num) //Octal with 0o prefix
 	fmt.Printf("Hexadecimal: %x\n", num)
+	fmt.Printf("Hexadecimal: %X\n", num) //Hexadecimal (uppercase)
 
 	// ========================================
 	// FLOATING-POINT & COMPLEX NUMBERS
