@@ -83,6 +83,16 @@ func main() {
 	// %g  : shortest between %e and %f
 	// %G  : shortest between %E and %F
 
+	//Examples	of floating-point formatting:
+	floatNum := 3.14159
+	fmt.Printf("Floats Examples:\n")
+	fmt.Printf("Decimal: %f\n", floatNum)
+	fmt.Printf("Decimal with 2 decimal places: %.2f\n", floatNum)
+	fmt.Printf("Scientific notation: %e\n", floatNum)
+	fmt.Printf("Scientific notation (uppercase): %E\n", floatNum)
+	fmt.Printf("Shortest representation: %g\n", floatNum)
+	fmt.Printf("Shortest representation (uppercase): %G\n", floatNum)
+
 	// ========================================
 	// STRINGS & BYTE SLICES
 	// ========================================
