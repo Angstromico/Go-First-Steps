@@ -233,4 +233,14 @@ func main() {
 	fmt.Printf("%+v\n", user) // {Name:Manuel Age:36}
 	fmt.Printf("%#v\n", user) // Go syntax representation
 
+	//Error formating functions
+	errorAge := checkAge(16)
+	fmt.Println(errorAge)
+}
+
+func checkAge(age int) error {
+	if age < 18 {
+		return fmt.Errorf("Age %d is too young to die", age)
+	}
+	return fmt.Errorf("An generic error")
 }
