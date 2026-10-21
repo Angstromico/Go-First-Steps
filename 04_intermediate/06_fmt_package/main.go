@@ -30,4 +30,7 @@ func main() {
 	// The "fmt.Printf" function is used to format and print output to the console. It allows you to include formatting verbs in the string, which are replaced with the corresponding values.
 	//In this example, we use the "%s" verb to format a string and the "%d" verb to format an integer.
 	fmt.Printf("My name is %s and I am %d years old.\n", name, age) // Output: My name is Alice and I am 25 years old.
+
+	//The Print without "f" or "ln" was the first one:
+	fmt.Print("Message \n")
 }
