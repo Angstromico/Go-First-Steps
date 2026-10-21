@@ -236,11 +236,13 @@ func main() {
 	//Error formating functions
 	errorAge := checkAge(16)
 	fmt.Println(errorAge)
+	errorAge = checkAge(22)
+	fmt.Println(errorAge)
 }
 
 func checkAge(age int) error {
 	if age < 18 {
 		return fmt.Errorf("Age %d is too young to die", age)
 	}
-	return fmt.Errorf("An generic error")
+	return nil
 }
