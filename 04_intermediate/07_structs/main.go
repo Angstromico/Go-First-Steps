@@ -10,6 +10,7 @@ type Person struct {
 	lastName  string
 	id        int
 	age       int
+	address   Address
 }
 
 type base struct {
@@ -25,6 +26,11 @@ type container struct {
 	str string
 }
 
+type Address struct {
+	city    string
+	country string
+}
+
 func main() {
 	//Initiallize struct:
 	p1 := Person{
@@ -32,6 +38,10 @@ func main() {
 		lastName:  "Morales",
 		id:        21018926,
 		age:       36,
+		address: Address{
+			city:    "Valencia",
+			country: "Venezuela",
+		},
 	}
 
 	fmt.Printf("The person is: %v \n", p1)
