@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 type Person struct {
 	firstName string
@@ -64,8 +67,16 @@ func main() {
 	p1.ModifyAge()
 
 	fmt.Println(p1.age) // 5
+
+	// Show full info from person:
+	manuel := p1.ComputedPerson()
+	fmt.Println(manuel)
 }
 
 func (p *Person) ModifyAge() {
 	p.age = 5
+}
+
+func (p *Person) ComputedPerson() string {
+	return p.firstName + " " + strconv.Itoa(p.age)
 }
