@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
-	type Person struct {
-		firstName string
-		lastName  string
-		id        int
-		age       int
-	}
+type Person struct {
+	firstName string
+	lastName  string
+	id        int
+	age       int
+}
 
+func main() {
 	//Initiallize struct:
 	p1 := Person{
 		firstName: "Manuel",
@@ -59,4 +59,13 @@ func main() {
 
 	fmt.Println(c.Add(10, 5))      // 15
 	fmt.Println(c.Subtract(10, 5)) // 5
+
+	//Modify  a field within a struct
+	p1.ModifyAge()
+
+	fmt.Println(p1.age) // 5
+}
+
+func (p *Person) ModifyAge() {
+	p.age = 5
 }
