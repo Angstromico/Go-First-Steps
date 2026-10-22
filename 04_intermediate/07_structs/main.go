@@ -44,7 +44,7 @@ func main() {
 		},
 	}
 
-	fmt.Printf("The person is: %v \n", p1)
+	fmt.Printf("The person is: %+v \n", p1)
 
 	// You don't need to define allthe fields on an struct
 	p2 := Person{
