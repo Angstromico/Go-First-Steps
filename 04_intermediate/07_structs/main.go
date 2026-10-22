@@ -41,4 +41,22 @@ func main() {
 	}
 
 	fmt.Println(newCar.model)
+
+	//Methods within a struct:
+	type Calculator struct {
+		Add      func(a, b int) int
+		Subtract func(a, b int) int
+	}
+
+	c := Calculator{
+		Add: func(a, b int) int {
+			return a + b
+		},
+		Subtract: func(a, b int) int {
+			return a - b
+		},
+	}
+
+	fmt.Println(c.Add(10, 5))      // 15
+	fmt.Println(c.Subtract(10, 5)) // 5
 }
