@@ -235,9 +235,9 @@ func main() {
 
 	//Error formating functions
 	errorAge := checkAge(16)
-	fmt.Println(errorAge)
-	errorAge = checkAge(22)
-	fmt.Println(errorAge)
+	if errorAge != nil {
+		println(errorAge)
+	}
 }
 
 func checkAge(age int) error {
