@@ -28,4 +28,17 @@ func main() {
 
 	fmt.Println(p2.lastName) //Acces to a single field
 	fmt.Println(p2.id)       //If you try to access a non defined field the return is 0
+
+	//Anonymous Structs
+	newCar := struct {
+		make    string
+		model   string
+		mileage int
+	}{
+		make:    "Ford",
+		model:   "Taurus",
+		mileage: 200000,
+	}
+
+	fmt.Println(newCar.model)
 }
