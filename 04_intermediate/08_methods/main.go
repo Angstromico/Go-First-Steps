@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type Shape struct {
+	Rectangle
+}
+
 type Rectangle struct {
 	width  float64
 	height float64
@@ -39,6 +43,17 @@ func main() {
 	fmt.Printf("The number %d is positive: %t\n", number, isPositive)
 	intMessage := number.intMessage()
 	fmt.Println(intMessage)
+
+	s := Shape{
+		Rectangle: Rectangle{
+			width:  5,
+			height: 5,
+		},
+	}
+
+	//You can use a method from the embebbed struct directly:
+	areaShape := s.Area()
+	fmt.Printf("The area from the shape is %.2f: ", areaShape)
 }
 
 type MyInt int
