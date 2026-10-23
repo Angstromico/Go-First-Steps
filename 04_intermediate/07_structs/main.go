@@ -31,6 +31,18 @@ type Address struct {
 	country string
 }
 
+// Struct in another struct without some fields:
+type CPU struct {
+	Brand string
+	Cores int
+	Speed float64
+}
+
+type Computer struct {
+	Name string
+	CPU  CPU
+}
+
 func main() {
 	//Initiallize struct:
 	p1 := Person{
@@ -113,6 +125,15 @@ func main() {
 
 	var d describer = co
 	fmt.Println("describer:", d.describe())
+
+	pc := Computer{
+		Name: "Gaming PC",
+		CPU: CPU{
+			Brand: "AMD",
+		},
+	}
+
+	fmt.Printf("%+v\n", pc) //The others CPU values are 0
 }
 
 func (p *Person) ModifyAge() {
