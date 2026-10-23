@@ -58,6 +58,19 @@ func main() {
 
 	fmt.Printf("The person is: %+v \n", p1)
 
+	p11 := Person{
+		firstName: "Manuel",
+		lastName:  "Morales",
+		id:        21018926,
+		age:       36,
+		address: Address{
+			city:    "Valencia",
+			country: "Venezuela",
+		},
+	}
+
+	fmt.Println("Comparition p1 and p11: ", p1 == p11)
+
 	// You don't need to define allthe fields on an struct
 	p2 := Person{
 		firstName: "Yeri",
