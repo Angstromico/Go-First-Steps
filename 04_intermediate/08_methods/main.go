@@ -32,4 +32,16 @@ func main() {
 		rectangle.height,
 		rectangle.Area(),
 	)
+
+	number := MyInt(-5)
+	isPositive := number.IsPositive()
+
+	fmt.Printf("The number %d is positive: %t\n", number, isPositive)
+}
+
+type MyInt int
+
+// Method on user-defined type
+func (m MyInt) IsPositive() bool {
+	return m > 0
 }
