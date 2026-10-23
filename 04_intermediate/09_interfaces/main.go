@@ -22,7 +22,7 @@ func (r Rect) area() float64 {
 	return r.height * r.width
 }
 func (a Circle) area() float64 {
-	return math.Pi * a.radius * a.radius
+	return math.Pi * math.Pow(a.radius, 2)
 }
 
 func (p Circle) perim() float64 {
