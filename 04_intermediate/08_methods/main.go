@@ -37,6 +37,8 @@ func main() {
 	isPositive := number.IsPositive()
 
 	fmt.Printf("The number %d is positive: %t\n", number, isPositive)
+	intMessage := number.intMessage()
+	fmt.Println(intMessage)
 }
 
 type MyInt int
@@ -44,4 +46,8 @@ type MyInt int
 // Method on user-defined type
 func (m MyInt) IsPositive() bool {
 	return m > 0
+}
+
+func (MyInt) intMessage() string {
+	return "Hello I am an int"
 }
