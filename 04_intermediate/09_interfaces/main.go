@@ -80,4 +80,12 @@ func main() {
 
 	makeAnimalSpeak(dog)
 	makeAnimalSpeak(cat)
+
+	myPrinter("Doggy", 1)
+}
+
+func myPrinter(i ...any) {
+	for _, v := range i {
+		fmt.Println(v)
+	}
 }
