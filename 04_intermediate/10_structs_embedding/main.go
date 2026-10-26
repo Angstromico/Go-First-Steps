@@ -17,6 +17,10 @@ func (p person) presentation() {
 	fmt.Printf("Hi, I am %s and I'm %d years old \n", p.name, p.age)
 }
 
+func (e employee) presentation() {
+	fmt.Printf("Hi, I'm %s and I'm %d years old, my employee ID is %s and my salary is %f \n", e.name, e.age, e.empId, e.salary)
+}
+
 func main() {
 	emp := employee{
 		person: person{
