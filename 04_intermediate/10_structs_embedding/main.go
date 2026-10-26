@@ -24,4 +24,5 @@ func main() {
 	}
 
 	fmt.Printf("The employee info is: %+v \n", emp)
+	fmt.Println("Employee name: ", emp.name) //You can access values embedded directly
 }
