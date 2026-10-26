@@ -84,7 +84,7 @@ func main() {
 	myPrinter("Doggy", 1)
 }
 
-func myPrinter(i ...any) {
+func myPrinter(i ...interface{}) {
 	for _, v := range i {
 		fmt.Println(v)
 	}
