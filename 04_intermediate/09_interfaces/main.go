@@ -82,10 +82,33 @@ func main() {
 	makeAnimalSpeak(cat)
 
 	myPrinter("Doggy", 1)
+	printType(false)
 }
 
 func myPrinter(i ...interface{}) {
 	for _, v := range i {
 		fmt.Println(v)
+	}
+}
+
+func printType(value any) {
+	switch v := value.(type) {
+	case int:
+		fmt.Println("int:", v)
+
+	case string:
+		fmt.Println("string:", v)
+
+	case bool:
+		fmt.Println("bool:", v)
+
+	case float64:
+		fmt.Println("float64:", v)
+
+	case nil:
+		fmt.Println("nil")
+
+	default:
+		fmt.Printf("unknown type: %T\n", v)
 	}
 }
