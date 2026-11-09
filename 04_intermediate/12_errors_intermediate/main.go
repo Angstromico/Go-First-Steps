@@ -46,4 +46,20 @@ func main() {
 	} else {
 		fmt.Println("10 is divisible by 2")
 	}
+
+	// Example usage of CustomError
+	customErr := &CustomError{Message: "custom error message"}
+	fmt.Println("Custom error:", customErr)
+}
+
+type CustomError struct {
+	Message string
+}
+
+func (e *CustomError) Error() string {
+	return e.Message
+}
+
+func (e *CustomError) Unwrap() error {
+	return nil
 }
