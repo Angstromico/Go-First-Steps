@@ -10,11 +10,18 @@ func (s *Stack[T]) Push(element T) {
 	s.elements = append(s.elements, element)
 }
 
-func (s *Stack[T]) Pop() T {
+func (s *Stack[T]) Pop() (T, bool) {
+	var zero T
+
+	if len(s.elements) == 0 {
+		return zero, false
+	}
+
 	lastIndex := len(s.elements) - 1
 	element := s.elements[lastIndex]
 	s.elements = s.elements[:lastIndex]
-	return element
+
+	return element, true
 }
 
 func printSlice[T any](s []T) {
@@ -32,9 +39,12 @@ func main() {
 	stack.Push(1)
 	stack.Push(2)
 	stack.Push(3)
-	fmt.Println("Popped element:", stack.Pop())
-	fmt.Println("Popped element:", stack.Pop())
-	fmt.Println("Popped element:", stack.Pop())
+	element, ok := stack.Pop()
+	fmt.Println("Popped element:", element, "ok:", ok)
+	element, ok = stack.Pop()
+	fmt.Println("Popped element:", element, "ok:", ok)
+	element, ok = stack.Pop()
+	fmt.Println("Popped element:", element, "ok:", ok)
 
 	intSlice := []int{1, 2, 3, 4, 5}
 	stringSlice := []string{"a", "b", "c", "d", "e"}
