@@ -50,6 +50,7 @@ func main() {
 	// Example usage of CustomError
 	customErr := &CustomError{Message: "custom error message"}
 	fmt.Println("Custom error:", customErr)
+	fmt.Println("Unwrapped error:", customErr.Unwrap())
 }
 
 type CustomError struct {
