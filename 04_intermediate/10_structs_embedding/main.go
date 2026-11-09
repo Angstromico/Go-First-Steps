@@ -8,9 +8,9 @@ type person struct {
 }
 
 type employee struct {
-	person //Embedded struct
-	empId  string
-	salary float32
+	employeeInfo person //Embedded struct named field
+	empId        string
+	salary       float32
 }
 
 func (p person) presentation() {
@@ -18,12 +18,12 @@ func (p person) presentation() {
 }
 
 func (e employee) presentation() {
-	fmt.Printf("Hi, I'm %s and I'm %d years old, my employee ID is %s and my salary is %f \n", e.name, e.age, e.empId, e.salary)
+	fmt.Printf("Hi, I'm %s and I'm %d years old, my employee ID is %s and my salary is %f \n", e.employeeInfo.name, e.employeeInfo.age, e.empId, e.salary)
 }
 
 func main() {
 	emp := employee{
-		person: person{
+		employeeInfo: person{
 			name: "Manuel",
 			age:  36,
 		},
@@ -32,6 +32,6 @@ func main() {
 	}
 
 	fmt.Printf("The employee info is: %+v \n", emp)
-	fmt.Println("Employee name: ", emp.name) //You can access values embedded directly
+	fmt.Println("Employee name: ", emp.employeeInfo.name) //You can access values embedded directly
 	emp.presentation()
 }
