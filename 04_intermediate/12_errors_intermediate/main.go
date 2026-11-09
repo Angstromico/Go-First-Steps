@@ -10,6 +10,14 @@ func divide(a, b int) (int, error) {
 	return a / b, nil
 }
 
+// Function that only returns error:
+func checkDivisible(a, b int) error {
+	if a%b != 0 {
+		return fmt.Errorf("%d is not divisible by %d", a, b)
+	}
+	return nil
+}
+
 func main() {
 	result, err := divide(10, 2)
 	if err != nil {
@@ -23,5 +31,19 @@ func main() {
 		fmt.Println("Error:", err)
 	} else {
 		fmt.Println("Result:", result)
+	}
+
+	err = checkDivisible(10, 3)
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println("10 is divisible by 3")
+	}
+
+	err = checkDivisible(10, 2)
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println("10 is divisible by 2")
 	}
 }
