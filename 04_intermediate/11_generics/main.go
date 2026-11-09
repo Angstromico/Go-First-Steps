@@ -2,6 +2,21 @@ package main
 
 import "fmt"
 
+type Stack[T any] struct {
+	elements []T
+}
+
+func (s *Stack[T]) Push(element T) {
+	s.elements = append(s.elements, element)
+}
+
+func (s *Stack[T]) Pop() T {
+	lastIndex := len(s.elements) - 1
+	element := s.elements[lastIndex]
+	s.elements = s.elements[:lastIndex]
+	return element
+}
+
 func printSlice[T any](s []T) {
 	for _, v := range s {
 		fmt.Println(v)
@@ -13,6 +28,14 @@ func swap[T any](a, b *T) {
 }
 
 func main() {
+	stack := Stack[int]{}
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	fmt.Println("Popped element:", stack.Pop())
+	fmt.Println("Popped element:", stack.Pop())
+	fmt.Println("Popped element:", stack.Pop())
+
 	intSlice := []int{1, 2, 3, 4, 5}
 	stringSlice := []string{"a", "b", "c", "d", "e"}
 
