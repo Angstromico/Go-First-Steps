@@ -9,6 +9,7 @@ type person struct {
 
 type employee struct {
 	employeeInfo person //Embedded struct named field
+	person              //Anonymous struct
 	empId        string
 	salary       float32
 }
